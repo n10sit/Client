@@ -37,7 +37,7 @@ public class Jframe extends client implements ActionListener {
 
 			gamePanel.setLayout(new BorderLayout());
 			gamePanel.add(this);
-			gamePanel.setPreferredSize(new Dimension(765, 503));
+			gamePanel.setPreferredSize(new Dimension(765, 503)); //765 503
 
 			new JMenu("Information");
 			new JMenu("World Map");

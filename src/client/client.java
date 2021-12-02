@@ -18,6 +18,8 @@ import javax.swing.*;
 public class client extends RSApplet {
 	
 	//remember to change the ip before sending to dylan
+	
+	//dylan can you see this when u open up client.java
 
 	public int MapX, MapY;
 	public static int spellID = 0;
