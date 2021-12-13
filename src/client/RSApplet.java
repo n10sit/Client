@@ -311,6 +311,9 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		idleTime = 0;
 		int i = keyevent.getKeyCode();
 		int j = keyevent.getKeyChar();
+		if (i == KeyEvent.VK_SPACE) {
+			
+		}
 		//hotkeys here
 		if (hotKey == 508) {
 			if(i ==  KeyEvent.VK_ESCAPE){

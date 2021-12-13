@@ -6,6 +6,7 @@ package client;
 
 import java.applet.AppletContext;
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.*;
 import java.net.*;
 import java.lang.reflect.Method;
@@ -4684,6 +4685,10 @@ public class client extends RSApplet {
 	private void method73() {
 		do {
 			int j = readChar(-796);
+			if (j == KeyEvent.VK_SPACE) {
+				stream.createFrame(40);
+				stream.writeWord(0);
+			}
 			if (j == -1)
 				break;
 			if (openInterfaceID != -1 && openInterfaceID == reportAbuseInterfaceID) {
