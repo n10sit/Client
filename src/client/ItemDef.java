@@ -290,6 +290,11 @@ class8.anInt174 = => itemDef.modelID =
 					itemDef.name = "Magnet mould";
 					break;
 					
+				case 1495:
+					itemDef.name = "Iorwerth's Gauntlets";
+					itemDef.description = "Gauntlets that once belonged to the corrupted elf Lord Iorwerth.".getBytes();
+					break;
+					
 				case 6070:
 					itemDef.name = "Lion's Mane";
 					break;
