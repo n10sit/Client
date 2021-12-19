@@ -160,8 +160,14 @@ public final class Model extends Animable {
 	}
 
 	private Model(int i) {
+		//System.out.println("param i: "+i);
 		aBoolean1659 = false;
+		//System.out.println("aboolean1659: "+aBoolean1659);
 		Class21 class21 = aClass21Array1661[i];
+		//class21 is blank class with some int values.
+		//System.out.println("class21.anint369: "+class21.anInt369);
+		//System.out.println("class21.anint370: "+class21.anInt370);
+		//System.out.println("class21.anint371: "+class21.anInt371);
 		anInt1626 = class21.anInt369;
 		anInt1630 = class21.anInt370;
 		anInt1642 = class21.anInt371;

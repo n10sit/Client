@@ -1373,7 +1373,7 @@ public class client extends RSApplet {
 			} else if (super.saveClickX >= 404 && super.saveClickX <= 515 && super.saveClickY >= 482
 					&& super.saveClickY <= 505) {
 				if (openInterfaceID == -1) {
-					clearTopInterfaces();
+					//clearTopInterfaces();
 					sendFrame248(23000, 5063);
 					/*reportAbuseInput = "";
 					canMute = false;
@@ -2315,7 +2315,7 @@ public class client extends RSApplet {
 		if (j == 613)
 			canMute = !canMute;
 		if (j >= 601 && j <= 612) {
-			clearTopInterfaces();
+			//clearTopInterfaces();
 			if (reportAbuseInput.length() > 0) {
 				stream.createFrame(218);
 				stream.writeQWord(TextClass.longForName(reportAbuseInput));
@@ -4686,8 +4686,10 @@ public class client extends RSApplet {
 		do {
 			int j = readChar(-796);
 			if (j == KeyEvent.VK_SPACE) {
-				stream.createFrame(40);
-				stream.writeWord(0);
+				//if (openInterfaceID == 356 || openInterfaceID == 4900 || openInterfaceID == 968) {
+					stream.createFrame(40);
+					stream.writeWord(0);
+				//}
 			}
 			if (j == -1)
 				break;
@@ -4888,6 +4890,19 @@ public class client extends RSApplet {
 						System.out.println("anims for npc id: " + npc);
 						System.out.println("walk anim: " + EntityDef.forID(npc).walkAnim);
 						System.out.println("stand anim: " + EntityDef.forID(npc).standAnim);
+					}
+					if (inputString.startsWith("getinterfaceinfo")) {
+						String[] args = inputString.split(" ");
+						int interfaceToGet = Integer.parseInt(args[1]);
+						RSInterface rsInterface = RSInterface.interfaceCache[interfaceToGet];
+						System.out.println("parent id: " + rsInterface.parentID);
+						if (rsInterface.children != null)
+							System.out.println("number of children: " + rsInterface.children.length);
+						if (rsInterface.sprites != null)
+							System.out.println("number of sprites: " + rsInterface.sprites.length);
+						System.out.println("action type: " + rsInterface.atActionType);
+						System.out.println("content type: " + rsInterface.contentType);
+						System.out.println("usable item interface: " + rsInterface.usableItemInterface);
 					}
 					if (inputString.startsWith("getnpcints")) {
 						String[] args = inputString.split(" ");
@@ -8910,6 +8925,9 @@ public class client extends RSApplet {
 			signlink.midi = "voladjust";
 	}
 
+	boolean printed = false;
+	int lastj1 = 0;
+	
 	private int extractInterfaceValues(RSInterface class9, int j) {
 		if (class9.valueIndexArray == null || j >= class9.valueIndexArray.length)
 			return -2;
@@ -11178,6 +11196,8 @@ public class client extends RSApplet {
 			case 87:
 				int j8 = inStream.method434();
 				int l14 = inStream.method439();
+				//System.out.println(j8);
+				//System.out.println(l14);
 				anIntArray1045[j8] = l14;
 				if (variousSettings[j8] != l14) {
 					variousSettings[j8] = l14;
@@ -11341,7 +11361,7 @@ public class client extends RSApplet {
 	}
 
 	public void loadOrbs() {
-		drawHPOrb();
+		drawHPOrb(); 
 		drawPrayerOrb();
 		// drawRunOrb();
 	}

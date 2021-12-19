@@ -228,7 +228,6 @@ public final class RSInterface {
 				rsInterface.spellName = stream.readString();
 				rsInterface.spellUsableOn = stream.readUnsignedWord();
 			}
-
 			if (rsInterface.type == 8) {
 				rsInterface.message = stream.readString();
 			}
@@ -263,7 +262,7 @@ public final class RSInterface {
 		equipmentScreen(textDrawingAreas);
 		magicTab(textDrawingAreas);
 		ancientMagicTab(textDrawingAreas);
-		configureLunar(textDrawingAreas);
+		//configureLunar(textDrawingAreas);
 		aMRUNodes_238 = null;
 		/*
 		 * try { writer.flush(); writer.close(); } catch (IOException e) {
@@ -313,7 +312,7 @@ public final class RSInterface {
 		homeLevel.height = 68;
 		addText(1198, "A teleport which requires no", tda, 0, 0xAF6A1A, true, true);
 		addText(18998, "runes and no required level that", tda, 0, 0xAF6A1A, true, true);
-		addText(18999, "teleports you to the main land.", tda, 0, 0xAF6A1A, true, true);
+		addText(18999, "teleports you to the arena.", tda, 0, 0xAF6A1A, true, true);
 		homeHover.totalChildren(4);
 		homeHover.child(0, 1197, 3, 4);
 		homeHover.child(1, 1198, 91, 23);
@@ -2564,6 +2563,7 @@ public final class RSInterface {
 				"Transfer up to 75% of hitpoints to a group", TDA, 37, 0, 5);
 		addLunar3RunesBigBox(30322, 9075, 564, 563, 2, 1, 0, 30013, 30012, 95, "Spellbook Swap",
 				"Change to another spellbook for 1\\nspell cast", TDA, 38, 0, 5);
+		constructLunar();
 	}
 
 	public static void constructLunar() {
@@ -2639,15 +2639,16 @@ public final class RSInterface {
 		setBounds(30227, 5, 176, 67, Interface);// hover
 		setBounds(30235, 5, 149, 68, Interface);// hover
 		setBounds(30243, 5, 176, 69, Interface);// hover
-		/*
-		 * setBounds(30251, 5, 5, 70, Interface);//hover setBounds(30259, 5, 5, 71,
-		 * Interface);//hover setBounds(30267, 5, 5, 72, Interface);//hover
-		 * setBounds(30275, 5, 5, 73, Interface);//hover setBounds(30283, 5, 5, 74,
-		 * Interface);//hover setBounds(30291, 5, 5, 75, Interface);//hover
-		 * setBounds(30299, 5, 5, 76, Interface);//hover setBounds(30307, 5, 5, 77,
-		 * Interface);//hover setBounds(30323, 5, 5, 78, Interface);//hover
-		 * setBounds(30315, 5, 5, 79, Interface);//hover
-		 */
+		/*setBounds(30251, 5, 5, 70, Interface);// hover
+		setBounds(30259, 5, 5, 71, Interface);// hover
+		setBounds(30267, 5, 5, 72, Interface);// hover
+		setBounds(30275, 5, 5, 73, Interface);// hover
+		setBounds(30283, 5, 5, 74, Interface);// hover
+		setBounds(30291, 5, 5, 75, Interface);// hover
+		setBounds(30299, 5, 5, 76, Interface);// hover
+		setBounds(30307, 5, 5, 77, Interface);// hover
+		setBounds(30323, 5, 5, 78, Interface);// hover
+		setBounds(30315, 5, 5, 79, Interface);// hover*/
 	}
 
 	public static void addButton(int i, int j, String name, int W, int H, String S, int AT) {

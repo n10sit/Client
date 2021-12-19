@@ -57,6 +57,10 @@ public final class ObjectDef {
 			objectDef.actions[0] = "Repair";
 			objectDef.description = "Probably needs a few logs....".getBytes();
 			break;
+		case 7171:
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Smelt runes";
+			break;
 		case 1988:
 			objectDef.actions = new String[5];
 			objectDef.actions[0] = "Repair";

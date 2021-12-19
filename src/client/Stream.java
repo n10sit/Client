@@ -124,6 +124,7 @@ public final class Stream extends NodeSub {
 		int i = ((buffer[currentOffset - 2] & 0xff) << 8) + (buffer[currentOffset - 1] & 0xff);
 		if(i > 32767)
 			i -= 0x10000;
+		//System.out.println("Stream readSignedWord int i: "+i);
 		return i;
 	}
 
@@ -167,7 +168,7 @@ public final class Stream extends NodeSub {
 	}
 
 	public int readBits(int i) {
-		int k = bitPosition >> 3;
+		int k = bitPosition >> 3; //k is bitposition shifted right 3 bits
 		int l = 8 - (bitPosition & 7);
 		int i1 = 0;
 		bitPosition += i;
@@ -260,21 +261,25 @@ public final class Stream extends NodeSub {
 	}
 
 	public int method434() {
+		//System.out.println("Stream method434 called");
 		currentOffset += 2;
 			return ((buffer[currentOffset - 1] & 0xff) << 8) + (buffer[currentOffset - 2] & 0xff);
 	}
 
 	public int method435() {
+		//System.out.println("Stream method435 called");
 		currentOffset += 2;
 		return ((buffer[currentOffset - 2] & 0xff) << 8) + (buffer[currentOffset - 1] - 128 & 0xff);
 	}
 
 	public int method436() {
+		//System.out.println("Stream method436 called");
 		currentOffset += 2;
 		return ((buffer[currentOffset - 1] & 0xff) << 8) + (buffer[currentOffset - 2] - 128 & 0xff);
 	}
 
 	public int method437() {
+		//System.out.println("Stream method437 called");
 		currentOffset += 2;
 		int j = ((buffer[currentOffset - 1] & 0xff) << 8) + (buffer[currentOffset - 2] & 0xff);
 		if(j > 32767)
@@ -283,6 +288,7 @@ public final class Stream extends NodeSub {
 	}
 
 	public int method438() {
+		//System.out.println("Stream method438 called");
 		currentOffset += 2;
 		int j = ((buffer[currentOffset - 1] & 0xff) << 8) + (buffer[currentOffset - 2] - 128 & 0xff);
 		if(j > 32767)
@@ -291,16 +297,19 @@ public final class Stream extends NodeSub {
 	}
 
 	public int method439() {
+		//System.out.println("Stream method439 called");
 			currentOffset += 4;
 			return ((buffer[currentOffset - 2] & 0xff) << 24) + ((buffer[currentOffset - 1] & 0xff) << 16) + ((buffer[currentOffset - 4] & 0xff) << 8) + (buffer[currentOffset - 3] & 0xff);
 	}
 
 	public int method440() {
+	//	System.out.println("Stream method440 called");
 		currentOffset += 4;
 		return ((buffer[currentOffset - 3] & 0xff) << 24) + ((buffer[currentOffset - 4] & 0xff) << 16) + ((buffer[currentOffset - 1] & 0xff) << 8) + (buffer[currentOffset - 2] & 0xff);
 	}
 
 	public void method441(int i, byte abyte0[], int j) {
+		//System.out.println("Stream method441 called");
 		for(int k = (i + j) - 1; k >= i; k--)
 			buffer[currentOffset++] = (byte)(abyte0[k] + 128);
 
