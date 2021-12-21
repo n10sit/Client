@@ -497,9 +497,11 @@ public final class RSInterface {
 		addPrayer(18006, 0, 604, 26, 3, "Mystic Lore");
 		addPrayer(18008, 0, 605, 43, 4, "Eagle Eye");
 		addPrayer(18010, 0, 606, 44, 5, "Mystic Might");
-		addPrayer(18012, 0, 607, 59, 8, "Piety");
+		addPrayer(18012, 0, 607, 61, 8, "Piety");
+		addPrayer(18014, 0, 608, 62, 9, "Augury");
+		addPrayer(18016, 0, 609, 80, 10, "Rigour");
 		// addPrayer(18014, 0, 608, 69, 7, "Turmoil");
-		tab.totalChildren(54);
+		tab.totalChildren(56);
 		/* Buttons/glows */
 		tab.child(0, 5609, 6, 4);
 		tab.child(1, 5610, 42, 4);
@@ -551,17 +553,19 @@ public final class RSInterface {
 		tab.child(45, 18009, 153, 116);
 		tab.child(46, 18010, 6, 148);
 		tab.child(47, 18011, 9, 151);
-		tab.child(48, 18012, 150, 148);
-		tab.child(49, 18013, 157, 151);
+		tab.child(48, 18012, 150, 148);//piety is diff size
+		tab.child(49, 18013, 153, 151);
 		tab.child(50, 18014, 6, 184);
-		tab.child(51, 18015, 8, 194);
+		tab.child(51, 18015, 9, 188);
+		tab.child(52, 18016, 42, 184);
+		tab.child(53, 18017, 45, 188);
 		/* Prayer icons & text */
-		tab.child(52, 5651, 65, 242);
-		tab.child(53, 687, 14, 244);
+		tab.child(54, 5651, 65, 242);
+		tab.child(55, 687, 14, 244);
 		String[] tools = { "Thick Skin", "Burst of Strength", "Clarity of Thought", "Rock Skin", "Superhuman Strength",
 				"Improved Reflexes", "Rapid Restore", "Rapid Heal", "Protect Item", "Steel Skin", "Ultimate Strength",
 				"Incredible Reflexes", "Protect from Magic", "Protect from Range", "Protect from Melee", "Retribution",
-				"Redemption", "Smite" };
+				"Redemption", "Smite", "Piety", "Augury", "Rigour" };
 		int count = 0;
 		for (int j = 5609; j <= 5623; j++) {
 			RSInterface tab2 = interfaceCache[j];

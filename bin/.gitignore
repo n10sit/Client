@@ -143,6 +143,21 @@
 /9524.dat
 /9526.dat
 /9527.dat
+/main_file_cache.idx0
+/main_file_cache.idx1
+/main_file_cache.idx2
+/main_file_cache.idx3
+/main_file_cache.idx4
+/models.dat
+/models.idx
+/npc.dat
+/npc.idx
+/null
+/shared_game_unpacker.dat
+/sound1.wav
+/sound2.wav
+/sound3.wav
+/uid.dat
 /9528.dat
 /9529.dat
 /9530.dat
@@ -155,15 +170,31 @@
 /9540.dat
 /9541.dat
 /Attack/
-/main_file_cache.idx4
-/models.dat
-/models.idx
-/npc.dat
-/npc.idx
-/null
-/shared_game_unpacker.dat
-/sound1.wav
-/sound2.wav
-/sound3.wav
-/uid.dat
+/Bank/
+/Clan Chat/
+/Curses/
+/Emotes/
+/Equipment/
+/Friends/
+/Lunar/
+/Magic/
+/Options/
+/Other/
+/Pest Control/
+/Prayer/
+/REDSTONES 0.png
+/REDSTONES 1.png
+/REDSTONES 2.png
+/REDSTONES 3.png
+/REDSTONES 4.png
+/Thumbs.db
+/chatarea.png
+/chatbuttons.png
 /client/
+/emptyorb.PNG
+/frame.png
+/hitpointsfill.PNG
+/maparea.png
+/prayerfill.PNG
+/sign/
+/tabarea.png
