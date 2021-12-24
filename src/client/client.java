@@ -4284,7 +4284,7 @@ public class client extends RSApplet {
 			else if (itemDef.description != null)
 				s5 = new String(itemDef.description);
 			else
-				s5 = "It's a " + itemDef.name + ".";
+				s5 = "It's a " + itemDef.name + ", "+(int) itemDef.value * 0.75+".";
 			pushMessage(s5, 0, "");
 		}
 		if (l == 169) {
@@ -4335,7 +4335,7 @@ public class client extends RSApplet {
 			if (itemDef_1.description != null)
 				s6 = new String(itemDef_1.description);
 			else
-				s6 = "It's a " + itemDef_1.name + ".";
+				s6 = "It's a " + itemDef_1.name + ", "+(int) itemDef_1.value * 0.75+".";
 			pushMessage(s6, 0, "");
 		}
 		itemSelected = 0;
