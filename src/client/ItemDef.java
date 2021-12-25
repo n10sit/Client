@@ -656,7 +656,7 @@ class8.anInt174 = => itemDef.modelID =
 					
 					
 				case 15060:
-					itemDef.name = "Twisted Bow";
+					itemDef.name = "Twisted bow";
 					itemDef.description = "A very powerful bow.".getBytes();
 					itemDef.actions = new String[5];
 					itemDef.actions[1] = "Wield";
@@ -668,14 +668,39 @@ class8.anInt174 = => itemDef.modelID =
 					itemDef.modelZoom = 1650;
 					itemDef.modelRotation1 = 384;
 					itemDef.modelRotation2 = 20;
-					itemDef.originalModelColors = new int[1];
-					itemDef.modifiedModelColors = new int[1];
-					itemDef.originalModelColors[0] = 6049;
-					itemDef.modifiedModelColors[0] = 61;
+					itemDef.aByte154 = 6;
+					itemDef.originalModelColors = new int[6];
+					itemDef.modifiedModelColors = new int[6];
+					itemDef.originalModelColors[0] = 10413;
+					itemDef.originalModelColors[1] = 10283;
+					itemDef.originalModelColors[2] = 10275;
+					itemDef.originalModelColors[3] = 7465;
+					itemDef.originalModelColors[4] = 10304;
+					itemDef.originalModelColors[5] = 5190;
+					itemDef.modifiedModelColors[0] = 28919;
+					itemDef.modifiedModelColors[1] = -17597;
+					itemDef.modifiedModelColors[2] = -18772;
+					itemDef.modifiedModelColors[3] = 18989;	
+					itemDef.modifiedModelColors[4] = 19706;
+					itemDef.modifiedModelColors[5] = 5190;
 					break;
 					
 				case 4508:
 					itemDef.name = "Crystal sword";
+					/*itemDef.originalModelColors = new int[6];
+					itemDef.modifiedModelColors = new int[6];
+					itemDef.originalModelColors[0] = 43321;
+					itemDef.originalModelColors[1] = 43992;
+					itemDef.originalModelColors[2] = 43235;
+					itemDef.originalModelColors[3] = 42095;
+					itemDef.originalModelColors[4] = 43486;
+					itemDef.originalModelColors[5] = 127;
+					itemDef.modifiedModelColors[0] = 80000;
+					itemDef.modifiedModelColors[1] = 10000;
+					itemDef.modifiedModelColors[2] = 5000;
+					itemDef.modifiedModelColors[3] = 45;
+					itemDef.modifiedModelColors[4] = 6984;
+					itemDef.modifiedModelColors[5] = 500;*/
 					break;
 					
 				case 9739:

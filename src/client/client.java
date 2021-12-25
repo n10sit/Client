@@ -4880,7 +4880,6 @@ public class client extends RSApplet {
 						System.out.println("anint192: " + ItemDef.forID(item).anInt192);
 						System.out.println("anint196: " + ItemDef.forID(item).anInt196);
 						System.out.println("anint197: " + ItemDef.forID(item).anInt197);
-						System.out.println("anint199: " + ItemDef.forID(item).anInt199);
 						System.out.println("certID: " + ItemDef.forID(item).certID);
 						System.out.println("certtemplateid: " + ItemDef.forID(item).certTemplateID);
 					}
