@@ -271,8 +271,8 @@ class8.anInt174 = => itemDef.modelID =
 					itemDef.name = "Ring of the Gods";
 					itemDef.originalModelColors = new int[1];
 					itemDef.modifiedModelColors = new int[1];
-					itemDef.originalModelColors[0] = 127;
-					itemDef.modifiedModelColors[0] = 20000;
+					itemDef.originalModelColors[0] = 9152;
+					itemDef.modifiedModelColors[0] = 99;
 					break;
 					
 				case 674:
