@@ -3601,7 +3601,7 @@ public class client extends RSApplet {
 			stream.method432(k + baseY);
 			stream.writeWord(j + baseX);
 		}
-		if (l == 679 && !aBoolean1149) {
+		if ((l == 679 && !aBoolean1149) || (l == KeyEvent.VK_SPACE && !aBoolean1149)) {
 			stream.createFrame(40);
 			stream.writeWord(k);
 			aBoolean1149 = true;
@@ -4685,14 +4685,15 @@ public class client extends RSApplet {
 	private void method73() {
 		do {
 			int j = readChar(-796);
-			if (j == KeyEvent.VK_SPACE) {
-				//if (openInterfaceID == 356 || openInterfaceID == 4900 || openInterfaceID == 968) {
-					stream.createFrame(40);
-					stream.writeWord(0);
-				//}
-			}
 			if (j == -1)
 				break;
+			if (j == KeyEvent.VK_SPACE && !aBoolean1149) {
+				if (openInterfaceID != 23000 && openInterfaceID != 3323 && openInterfaceID != 3321 && openInterfaceID != 3443) {
+					stream.createFrame(40);
+					stream.writeWord(0);
+					aBoolean1149 = true;
+				}
+			}
 			if (openInterfaceID != -1 && openInterfaceID == reportAbuseInterfaceID) {
 				if (j == 8 && reportAbuseInput.length() > 0)
 					reportAbuseInput = reportAbuseInput.substring(0, reportAbuseInput.length() - 1);
